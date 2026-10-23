@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3f0e7">
+  <meta name="description" content="Equilibra tres barras a la vez. Seis pequeños móviles, pesos distintos y un momento de calma. Un juego original de Daily Games, 23 octubre 2026.">
+  <meta property="og:title" content="Contrapeso · Daily Games">
+  <meta property="og:description" content="Encuentra el punto de calma. Un puzle de pesos y distancias, sin reloj.">
+  <meta property="og:image" content="assets/cover.svg">
+  <title>Contrapeso · Daily Games</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#game">Saltar al juego</a>
+<div class="shell">
+  <header class="masthead"><a class="wordmark" href="https://mitchell-castillo.github.io/daily-games/">j<span>·</span> <small>un juego<br>cada día.</small></a><span class="edition">23 OCT 2026 <span aria-hidden="true">/</span> PUZLE 006</span><a class="collection" href="https://mitchell-castillo.github.io/daily-games/">La colección ↗</a></header>
+  <main>
+    <section class="intro" aria-labelledby="title"><div><p class="eyebrow">UN MOMENTO PARA ENCONTRAR EL EQUILIBRIO</p><h1 id="title">Contra<span>peso.</span></h1><p class="tagline">Todo tiene su peso.<br>La distancia lo cambia todo.</p></div><div class="intro-aside"><span class="seal" aria-hidden="true">↔</span><p>6 móviles originales<br><strong>Sin reloj. A tu ritmo.</strong></p></div></section>
+    <div class="play-layout">
+      <section class="game" id="game" aria-labelledby="level-title" tabindex="-1">
+        <div class="game-heading"><div><p id="level-number" class="eyebrow"></p><h2 id="level-title"></h2></div><span id="move-count" class="moves"></span></div>
+        <p class="quick-rule">Cuelga todos los pesos. En cada barra, <strong>peso × distancia</strong> debe sumar lo mismo a izquierda y derecha.</p>
+        <nav id="level-nav" class="level-nav" aria-label="Elegir móvil"></nav>
+        <p id="level-note" class="level-note"></p>
+        <div class="mobile" aria-label="Móvil de tres barras">
+          <section class="mother" aria-labelledby="mother-title"><h3 id="mother-title">Barra superior</h3><div class="mother-values"><span id="left-total"></span><span class="fulcrum" aria-hidden="true">△</span><span id="right-total"></span></div><div class="top-bar" aria-hidden="true"><i></i><i></i></div><p id="root-balance" class="balance"></p></section>
+          <div class="branches"><section class="branch" aria-labelledby="left-title"><h3 id="left-title">Rama A <span>izquierda</span></h3><div class="small-bar" aria-hidden="true">△</div><div id="left-hooks" class="hooks"></div><p id="left-balance" class="balance"></p></section><section class="branch" aria-labelledby="right-title"><h3 id="right-title">Rama B <span>derecha</span></h3><div class="small-bar" aria-hidden="true">△</div><div id="right-hooks" class="hooks"></div><p id="right-balance" class="balance"></p></section></div>
+          <p class="scale-note">Esquema no a escala · I = izquierda · D = derecha del apoyo</p>
+        </div>
+        <div class="shelf-heading"><h3>Los pesos</h3><span>1. Elige un peso · 2. Toca un gancho</span></div>
+        <div id="weights" class="weights" role="group" aria-label="Seleccionar peso"></div>
+        <p id="selection" class="selection"></p>
+        <div class="toolbar"><button id="undo" type="button">↶ Deshacer</button><button id="hint" type="button">Una pista</button><button id="restart" type="button">Reiniciar móvil</button></div>
+        <p id="status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="win" class="win" hidden><span class="eyebrow">TODO EN SU SITIO</span><h3 id="win-title"></h3><p id="win-copy"></p><button id="next" class="primary" type="button">Siguiente móvil →</button></div>
+      </section>
+      <aside class="guide" aria-labelledby="guide-title"><span class="guide-mark" aria-hidden="true">✳</span><p class="eyebrow">EL ARTE DE COMPENSAR</p><h2 id="guide-title">Un poco de peso.<br>Un poco de distancia.</h2><p>Cuelga todos los pesos y equilibra <strong>las tres barras</strong>. Puedes moverlos y cambiarlos de sitio tantas veces como quieras.</p><div class="formula"><span>peso</span><b>×</b><span>distancia</span><b>=</b><strong>fuerza</strong></div><p>En cada barra, suma la fuerza de los ganchos a la izquierda del apoyo. Debe ser igual a la suma de la derecha.</p><p class="example"><strong>Por ejemplo</strong><br>2 a distancia 3 compensa 6 a distancia 1:<br><b>2 × 3 = 6 × 1</b></p><p>La barra superior sostiene el <strong>peso total de cada rama</strong>. Multiplícalo por el brazo indicado. Las barras y cuerdas no pesan.</p><details open><summary>Cómo mover los pesos</summary><p>Toca un peso y luego un gancho. Toca un gancho ocupado sin seleccionar peso para retirarlo. Si el peso ya cuelga, se intercambia con el del destino.</p><p><strong>Teclado:</strong> Tab para recorrer y Enter o Espacio para activar. En los ganchos, usa ←/→ para recorrerlos y Supr para retirar. Escape cancela la selección. Z deshace fuera de los diálogos.</p><p>Los botones numéricos pequeños son distancias; los discos grandes son pesos. El equilibrio también se indica con texto.</p></details><div class="local"><strong>Tu avance se queda aquí.</strong><p id="save-status">Se guarda en este navegador. Sin cuentas ni sincronización. Borrar los datos del navegador borra tu avance.</p><p id="progress-count"></p><button id="erase" class="text-button" type="button">Borrar mi progreso…</button></div></aside>
+    </div>
+  </main>
+  <footer><span>Una pequeña pausa de Daily Games.</span><span>Diseño original · 23 octubre 2026</span></footer>
+</div>
+<dialog id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-copy"><form method="dialog"><p class="eyebrow">UN MOMENTO</p><h2 id="confirm-title"></h2><p id="confirm-copy"></p><div class="dialog-actions"><button id="cancel" type="submit" value="cancel" autofocus>Conservar</button><button id="confirm" class="danger" type="submit" value="confirm">Confirmar</button></div></form></dialog>
+<noscript><p class="noscript">Contrapeso necesita JavaScript para calcular el equilibrio y guardar tus jugadas.</p></noscript>
+</body></html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="t d">
+<title id="t">Contrapeso</title><desc id="d">Un móvil artesanal equilibrado con tres barras, pesos de terracota y latón sobre papel crema.</desc>
+<defs><pattern id="grain" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="6" r=".7" fill="#243e40" opacity=".08"/><circle cx="12" cy="15" r=".5" fill="#243e40" opacity=".07"/></pattern></defs>
+<rect width="1200" height="800" fill="#f3f0e7"/><rect width="1200" height="800" fill="url(#grain)"/>
+<path d="M64 83h1072" stroke="#b8c3b8"/><text x="64" y="61" fill="#243e40" font-size="16" font-family="sans-serif" letter-spacing="3">DAILY GAMES / 23 OCT 2026</text>
+<circle cx="900" cy="387" r="229" fill="#e3e7db"/>
+<g fill="none" stroke="#243e40" stroke-width="5" stroke-linecap="round"><path d="M900 107v119M700 226h300M700 226v108m300-108v108M668 334h104m156 0h104M680 334v108m80-108v108m180-108v108m80-108v108"/></g>
+<g fill="#a84c31"><circle cx="680" cy="478" r="38"/><circle cx="1020" cy="478" r="38"/></g><g fill="#dcb65f"><circle cx="760" cy="470" r="28"/><circle cx="940" cy="470" r="28"/></g>
+<g font-family="Georgia,serif" text-anchor="middle" font-size="36" fill="#fffdf7"><text x="680" y="491">3</text><text x="1020" y="491">6</text></g><g font-family="Georgia,serif" text-anchor="middle" font-size="28" fill="#243e40"><text x="760" y="480">1</text><text x="940" y="480">2</text></g>
+<path d="M900 211l-11 15h22zM700 319l-10 15h20zM1000 319l-10 15h20z" fill="#243e40"/>
+<text x="61" y="308" fill="#243e40" font-family="Georgia,serif" font-size="105" letter-spacing="-6">Contra</text><text x="61" y="414" fill="#a84c31" font-family="Georgia,serif" font-size="112" font-style="italic" letter-spacing="-5">peso.</text><text x="67" y="491" fill="#566967" font-size="23" font-family="sans-serif">La distancia lo cambia todo.</text>
+<path d="M66 570h440" stroke="#b8c3b8"/><text x="67" y="615" fill="#243e40" font-size="16" font-family="sans-serif" letter-spacing="2">6 MÓVILES / UN PUNTO DE CALMA</text><text x="67" y="729" fill="#566967" font-size="14" font-family="sans-serif">UN JUEGO ORIGINAL CADA DÍA</text><text x="1118" y="729" text-anchor="end" fill="#a84c31" font-size="22" font-family="Georgia,serif">006</text>
+</svg>
